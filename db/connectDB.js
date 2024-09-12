@@ -18,9 +18,8 @@ export async function connectToDB() {
         await fakeLoading()
         await mongoose.connect("mongodb://localhost:27017");
         spinner.stop();
-        console.log(chalk.greenBright('Database connected!\n'));
-    
-        
+        console.log(chalk.greenBright('Database connected!'));
+
     } catch (error) {
         console.log(chalk.redBright('Error : ') , error.message);   
         process.exit(1)      

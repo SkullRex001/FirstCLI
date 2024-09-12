@@ -29,7 +29,7 @@ const readTask = async ()=>{
         await disconnectDB()
         
     } catch (error) {
-        console.log('Something went wrong, Error: ', error)
+        console.log(chalk.redBright('Error: '), error.message);
         process.exit(1)
     }
 }

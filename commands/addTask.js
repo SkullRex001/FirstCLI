@@ -46,8 +46,8 @@ const addTask = async ()=>{
         await disconnectDB();
         
     } catch (error) {
-        console.log('Something went wrong, Error: ', error)
-        process.exit(1)
+        console.log(chalk.redBright('Error: '), error.message);
+        process.exit(1);
     }
 }
 
