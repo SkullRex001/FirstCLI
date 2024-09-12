@@ -21,7 +21,7 @@ const updateObject = async (todo)=>{
         }
 }
 
-const updateToDo = async ()=>{
+const updateTask = async ()=>{
     try {
         const ID = await selectTodo();
         await connectToDB();
@@ -56,4 +56,4 @@ const updateToDo = async ()=>{
     }
 }
 
-updateToDo();
+export default updateTask;

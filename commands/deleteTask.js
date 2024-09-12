@@ -43,3 +43,5 @@ const deleteTask = async ()=>{
         process.exit(1);
     }
 }
+
+export default deleteTask;
