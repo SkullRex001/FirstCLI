@@ -4,7 +4,7 @@ import Todos from "../schema/TodoSchema.js";
 import ora from "ora";
 import chalk from "chalk";
 
-const selectTodo = async ()=>{
+export const selectTodo = async ()=>{
     try {
         const ID = await inquirer.prompt([
             {name : 'code' , message : 'Enter todo ID' , type : 'input'}
@@ -43,5 +43,3 @@ const deleteTask = async ()=>{
         process.exit(1);
     }
 }
-
-deleteTask();
