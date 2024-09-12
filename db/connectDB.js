@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import ora from "ora";
 import chalk from "chalk";
 import dotenv from 'dotenv';
-dotenv.config({path : '../.env'});
+dotenv.config();
 
 
 
