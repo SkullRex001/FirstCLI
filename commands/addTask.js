@@ -51,5 +51,4 @@ const addTask = async ()=>{
     }
 }
 
-
-addTask();
+export default addTask;
